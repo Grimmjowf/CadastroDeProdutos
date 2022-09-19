@@ -12,20 +12,20 @@
       <div class="card-body">
         <form action="insert.php" method="post">
           <div class="mb-3">
-            <label for="nome" class="form-label">Nome:</label>
-            <input type="text" class="form-control" id="nome" name="nome">
+            <label for="marca" class="form-label">Marca:</label>
+            <input type="text" class="form-control" id="marca" name="marca">
           </div>
           <div class="mb-3">
-            <label for="email" class="form-label">E-mail:</label>
-            <input type="email" class="form-control" id="email" name="email">
+            <label for="preco" class="form-label">Preço:</label>
+            <input type="text" class="form-control" id="preco" name="preco">
           </div>
           <div class="mb-3">
-            <label for="usuario" class="form-label">Usuário:</label>
-            <input type="text" class="form-control" id="usuario" name="usuario">
+            <label for="estoque" class="form-label">Estoque:</label>
+            <input type="text" class="form-control" id="estoque" name="estoque">
           </div>
           <div class="mb-3">
-            <label for="senha" class="form-label">Senha:</label>
-            <input type="password" class="form-control" id="senha" name="senha">
+            <label for="descricao" class="form-label">Descriçao:</label>
+            <input type="text" class="form-control" id="descricao" name="descricao">
           </div>
           <div class="mb-3 ">
             <input type="submit" class="form-control w-25 bg-primary">

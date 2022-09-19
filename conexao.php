@@ -2,7 +2,7 @@
     $endereco = 'localhost';
     $usuario  = 'root';
     $senha    = '';
-    $base     = 'produtos';
+    $base     = 'cadastro_produtos';
     
     $conexao = mysqli_connect($endereco, $usuario, $senha, $base);
 ?>
