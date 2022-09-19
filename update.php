@@ -1,5 +1,9 @@
 <?php
   require('conexao.php');
 
-  mysqli_query($conexao, 'UPDATE usuarios');
+    mysqli_query($conexao, 'UPDATE produtos');
+    
+    
+  
+  
 ?>
