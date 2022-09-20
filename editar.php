@@ -17,10 +17,15 @@
   <body>
     <div class="card m-4 bg-secondary"> 
       <div class="card-body">
-        <form action="update.php" method="post">
+        <form action="update.php" method="POST">
+
+        
+        <div class="mb-3">
+           <input type="hidden" class="form-control" id="id" name="id" value="<?=$registro['id'];?>">
+        </div>
           <div class="mb-3">
             <label for="marca" class="form-label">Marca:</label>
-            <input type="text" class="form-control" id="marca" name="marca" value="<?=$registro['marca']?>">
+            <input type="text" class="form-control" id="marca" name="marca" value="<?=$registro['marca'];?>">
           </div>
           <div class="mb-3">
             <label for="preco" class="form-label">Preço:</label>
