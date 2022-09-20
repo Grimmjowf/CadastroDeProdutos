@@ -2,11 +2,11 @@
     $id = $_GET['id']; 
 
     require('conexao.php');
-    $resultado = mysqli_query($conexao, "SELECT * FROM usuarios WHERE id = $id");
-    $usuario = mysqli_fetch_assoc($resultado);
+    $resultado = mysqli_query($conexao, "SELECT * FROM produtos WHERE id = $id");
+    $registro  = mysqli_fetch_assoc($resultado);
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,27 +19,27 @@
       <div class="card-body">
         <form action="update.php" method="post">
           <div class="mb-3">
-            <label for="nome" class="form-label">Nome:</label>
-            <input type="text" class="form-control" id="nome" name="nome" value="<?=$usuario['nome']?>">
+            <label for="marca" class="form-label">Marca:</label>
+            <input type="text" class="form-control" id="marca" name="marca" value="<?=$registro['marca']?>">
           </div>
           <div class="mb-3">
-            <label for="email" class="form-label">E-mail:</label>
-            <input type="email" class="form-control" id="email" name="email" value="<?=$usuario['email']?>">
+            <label for="preco" class="form-label">Preço:</label>
+            <input type="text" class="form-control" id="preco" name="preco" value="<?=$registro['preco']?>">
           </div>
           <div class="mb-3">
-            <label for="usuario" class="form-label">Usuário:</label>
-            <input type="text" class="form-control" id="usuario" name="usuario" value="<?=$usuario['user']?>">
+            <label for="estoque" class="form-label">Estoque:</label>
+            <input type="text" class="form-control" id="estoque" name="estoque" value="<?=$registro['estoque']?>">
           </div>
           <div class="mb-3">
-            <label for="senha" class="form-label">Senha:</label>
-            <input type="password" class="form-control" id="senha" name="senha">
+            <label for="descricao" class="form-label">Descrição:</label>
+            <input type="text" class="form-control" id="descricao" name="descricao"  value="<?=$registro['descricao']?>"> 
           </div>
           <div class="mb-3 ">
-            <input type="submit" class="form-control w-25 bg-primary">
+        <input type="submit"  class="form-control w-25 bg-primary">
           </div>
         </form>
       </div>
     </div>
+
   </body>
 </html>
-
